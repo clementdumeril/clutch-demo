@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="532" viewBox="0 0 1200 532" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#444"/>
+    </marker>
+    <marker id="ahb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1F5FBF"/>
+    </marker>
+  </defs>
+  <rect x="0.75" y="0.75" width="1198.5" height="530.5" rx="16" fill="#FFFFFF" stroke="#D0D7DE" stroke-width="1.5"/>
+
+  <!-- zones -->
+  <rect x="24" y="32" width="376" height="368" rx="10" fill="none" stroke="#8A9AA8" stroke-width="1.2" stroke-dasharray="6 4"/>
+  <text x="40" y="56" font-size="15" fill="#5A6875" letter-spacing="1.5">SENSORS, ONE PERSON</text>
+  <rect x="424" y="32" width="352" height="368" rx="10" fill="none" stroke="#8A9AA8" stroke-width="1.2" stroke-dasharray="6 4"/>
+  <text x="440" y="56" font-size="15" fill="#5A6875" letter-spacing="1.5">PER-PERSON MODELS</text>
+  <rect x="800" y="32" width="376" height="368" rx="10" fill="none" stroke="#8A9AA8" stroke-width="1.2" stroke-dasharray="6 4"/>
+  <text x="816" y="56" font-size="15" fill="#5A6875" letter-spacing="1.5">LIVE SCORE, HEADSET OFF</text>
+
+  <!-- sensors -->
+  <text x="40" y="86" font-size="17" fill="#15202A">Muse 2 EEG, 4 electrodes</text>
+  <rect x="40" y="96" width="344" height="92" rx="6" fill="#FFFFFF" stroke="#D0D7DE"/>
+  <image href="eeg.png" x="44" y="98" width="336" height="88"/>
+  <text x="40" y="226" font-size="17" fill="#15202A">Webcam: 7 face indicators</text>
+  <rect x="40" y="236" width="344" height="134" rx="6" fill="#FFFFFF" stroke="#D0D7DE"/>
+  <image href="face.png" x="44" y="238" width="336" height="130"/>
+  <text x="384" y="226" font-size="16" fill="#5A6875" text-anchor="end">+ watch heart rate</text>
+
+  <!-- models -->
+  <line x1="384" y1="142" x2="436" y2="142" stroke="#444" stroke-width="2" marker-end="url(#ah)"/>
+  <rect x="440" y="100" width="320" height="84" rx="10" fill="#E2EBFA" stroke="#1F5FBF" stroke-width="2"/>
+  <text x="600" y="134" font-size="24" fill="#15202A" text-anchor="middle">Teacher: brain score</text>
+  <text x="600" y="162" font-size="16" fill="#5A6875" text-anchor="middle">bands on the alpha peak, per person</text>
+
+  <path d="M600,184 L600,272" fill="none" stroke="#1F5FBF" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#ahb)"/>
+  <text x="612" y="216" font-size="16" fill="#1F5FBF">target, during the</text>
+  <text x="612" y="236" font-size="16" fill="#1F5FBF">9-min calibration only</text>
+
+  <line x1="384" y1="316" x2="436" y2="316" stroke="#444" stroke-width="2" marker-end="url(#ah)"/>
+  <rect x="440" y="276" width="320" height="84" rx="10" fill="#DCF1EE" stroke="#0D7A6F" stroke-width="2"/>
+  <text x="600" y="310" font-size="24" fill="#15202A" text-anchor="middle">Student: ridge</text>
+  <text x="600" y="338" font-size="16" fill="#5A6875" text-anchor="middle">heart rate + face, change from rest</text>
+
+  <!-- output -->
+  <line x1="760" y1="318" x2="790" y2="318" stroke="#444" stroke-width="2"/>
+  <path d="M790,318 L790,150 L812,150" fill="none" stroke="#444" stroke-width="2" marker-end="url(#ah)"/>
+  <rect x="816" y="76" width="344" height="122" rx="6" fill="#FFFFFF" stroke="#D0D7DE"/>
+  <image href="chart.png" x="818" y="78" width="340" height="114"/>
+  <text x="816" y="222" font-size="16" fill="#5A6875">solid: teacher; dashed: student;</text>
+  <text x="816" y="242" font-size="16" fill="#5A6875">red: hard math, data neither model saw</text>
+  <text x="816" y="284" font-size="16" fill="#15202A">Relax vs stress blocks, this person</text>
+  <text x="816" y="320" font-size="26" font-weight="bold" fill="#B8461F">AUC 0.91</text>
+  <text x="944" y="320" font-size="17" fill="#5A6875">student, no headset</text>
+  <text x="816" y="348" font-size="16" fill="#5A6875">teacher 0.92; pilot with 2 people;</text>
+  <text x="816" y="370" font-size="16" fill="#5A6875">shared model on a new person: 0.35</text>
+
+  <!-- timeline band -->
+  <text x="40" y="436" font-size="15" fill="#5A6875" letter-spacing="1.5">THE 19-MIN RECORDING REPLAYED BY THE PAGE</text>
+  <rect x="32" y="448" width="1136" height="42" rx="6" fill="#FFFFFF" stroke="#D0D7DE"/>
+  <image href="timeline.png" x="34" y="449" width="1132" height="40"/>
+  <text x="34" y="514" font-size="15" fill="#5A6875">calibration: rest, stress test, recovery</text>
+  <text x="1166" y="514" font-size="15" fill="#5A6875" text-anchor="end">study blocks after the calibration, scored by the student alone</text>
+</svg>
